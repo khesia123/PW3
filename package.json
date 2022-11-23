@@ -1,0 +1,27 @@
+{
+  "name": "apicafe",
+  "version": "1.0.0",
+  "description": "APIREST controle de vendas",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "pw3",
+    "nodejs",
+    "etec",
+    "barueri",
+    "3DS"
+  ],
+  "author": "Khesia nunes",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "express": "^4.18.1",
+    "g": "^2.0.1",
+    "mysql-server": "^0.0.5",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.23.2"
+  }
+}
