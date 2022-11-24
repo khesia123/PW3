@@ -72,7 +72,7 @@ const modelproduto = require('../model/produtomodel');
         router.put('/alterarProduto', (req, res)=>{
             let {id, nome_produto} = req.body;
         
-            modelProduto.update(
+            modelproduto.update(
                 {nome_produto},
                 {where:{id}}
             ).then( ()=>{
@@ -102,7 +102,7 @@ const modelproduto = require('../model/produtomodel');
         
             let {id} = req.params;
         
-            modelProduto.destroy(
+            modelproduto.destroy(
                 {where: {id}}
             ).then( ()=>{
         

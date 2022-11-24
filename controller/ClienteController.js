@@ -10,7 +10,7 @@ router.get('/listarCliente', (req, res)=>{
         modelcliente.findAll()
             .then(
                 (clientes)=>{
-                    return res.status(200).json(clintes);
+                    return res.status(200).json(clientes);
                 }
             ).catch(
                 (erro)=>{
@@ -47,10 +47,10 @@ router.get('/listarCliente', (req, res)=>{
 
 
         router.post('/inserirCliente', (req, res)=>{
-            let {nome_cliente} = req.body;
+            let {nm_cliente} = req.body;
             
             modelCliente.create(
-                {nome_cliente}
+                {nm_cliente}
             ).then(
                 ()=>{
                         return res.status(201).json({
@@ -73,10 +73,10 @@ router.get('/listarCliente', (req, res)=>{
         router.put('/alterarCliente', (req, res)=>{
 
             
-            let {id, nome_cliente} = req.body;
+            let {id, nm_cliente} = req.body;
         
             modelCliente.update(
-                {nome_cliente},
+                {nm_cliente},
                 {where:{id}}
             ).then( ()=>{
         
